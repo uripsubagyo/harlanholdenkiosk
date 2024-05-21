@@ -1,10 +1,3 @@
-//
-//  PaymentView.swift
-//  harlanholdenkiosk
-//
-//  Created by I Made Urip Subagyo on 21/05/24.
-//
-
 import SwiftUI
 
 struct PaymentView: View {
@@ -49,7 +42,7 @@ struct PaymentView: View {
                                 }
                         )
                     }}
-            }
+            }.padding(.top,20)
             
             Spacer()
             Text("Pay").font(Font.custom("Poppins-Reguler", size: 30)).foregroundColor(Color.black).onTapGesture {

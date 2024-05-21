@@ -1,10 +1,3 @@
-//
-//  SuccessPayment.swift
-//  harlanholdenkiosk
-//
-//  Created by I Made Urip Subagyo on 21/05/24.
-//
-
 import SwiftUI
 
 struct SuccessPayment: View {

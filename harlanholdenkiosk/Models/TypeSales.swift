@@ -1,10 +1,3 @@
-//
-//  TypeSales.swift
-//  harlanholdenkiosk
-//
-//  Created by I Made Urip Subagyo on 20/05/24.
-//
-
 import Foundation
 
 struct TypeSales : Identifiable{

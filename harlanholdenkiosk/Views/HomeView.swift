@@ -1,10 +1,3 @@
-//
-//  HomeView.swift
-//  harlanholdenkiosk
-//
-//  Created by I Made Urip Subagyo on 16/05/24.
-//
-
 import SwiftUI
 
 struct HomeView: View {

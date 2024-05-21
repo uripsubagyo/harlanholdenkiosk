@@ -1,9 +1,3 @@
-//
-//  PreImage.swift
-//  harlanholdenkiosk
-//
-//  Created by I Made Urip Subagyo on 16/05/24.
-//
 
 import Foundation
 
