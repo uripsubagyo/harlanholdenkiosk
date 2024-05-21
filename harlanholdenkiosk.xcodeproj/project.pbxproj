@@ -13,6 +13,15 @@
 		E57046082BF596AB00D61155 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E57046072BF596AB00D61155 /* Preview Assets.xcassets */; };
 		E57046132BF5AD8300D61155 /* PreImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57046122BF5AD8300D61155 /* PreImage.swift */; };
 		E57046172BF5B05A00D61155 /* PreScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57046162BF5B05A00D61155 /* PreScreenView.swift */; };
+		E57046192BF5DD8500D61155 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57046182BF5DD8500D61155 /* HomeView.swift */; };
+		E57046342BFB8CD800D61155 /* TypeSales.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57046332BFB8CD800D61155 /* TypeSales.swift */; };
+		E570463D2BFC31E300D61155 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E570463C2BFC31E300D61155 /* Menu.swift */; };
+		E570463F2BFC75F900D61155 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E570463E2BFC75F900D61155 /* OrderView.swift */; };
+		E57046412BFC761A00D61155 /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57046402BFC761A00D61155 /* PaymentView.swift */; };
+		E57046432BFC763000D61155 /* WaitingPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57046422BFC763000D61155 /* WaitingPayment.swift */; };
+		E57046452BFC764000D61155 /* SuccessPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57046442BFC764000D61155 /* SuccessPayment.swift */; };
+		E57046472BFC89D200D61155 /* ModalMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57046462BFC89D200D61155 /* ModalMenu.swift */; };
+		E57046492BFC911B00D61155 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57046482BFC911B00D61155 /* Payment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +32,22 @@
 		E57046072BF596AB00D61155 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E57046122BF5AD8300D61155 /* PreImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreImage.swift; sourceTree = "<group>"; };
 		E57046162BF5B05A00D61155 /* PreScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreScreenView.swift; sourceTree = "<group>"; };
+		E57046182BF5DD8500D61155 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E57046332BFB8CD800D61155 /* TypeSales.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeSales.swift; sourceTree = "<group>"; };
+		E57046352BFB915600D61155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E57046362BFB920D00D61155 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		E57046372BFB920D00D61155 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		E57046382BFB920D00D61155 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		E57046392BFB920D00D61155 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		E570463A2BFB920D00D61155 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		E570463B2BFB920D00D61155 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		E570463C2BFC31E300D61155 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		E570463E2BFC75F900D61155 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		E57046402BFC761A00D61155 /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
+		E57046422BFC763000D61155 /* WaitingPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingPayment.swift; sourceTree = "<group>"; };
+		E57046442BFC764000D61155 /* SuccessPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessPayment.swift; sourceTree = "<group>"; };
+		E57046462BFC89D200D61155 /* ModalMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalMenu.swift; sourceTree = "<group>"; };
+		E57046482BFC911B00D61155 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +80,8 @@
 		E57045FF2BF596AA00D61155 /* harlanholdenkiosk */ = {
 			isa = PBXGroup;
 			children = (
+				E57046352BFB915600D61155 /* Info.plist */,
+				E57046322BF750A000D61155 /* Fonts */,
 				E57046112BF5AAA100D61155 /* Views */,
 				E57046102BF5AA9700D61155 /* Components */,
 				E570460F2BF5AA8E00D61155 /* Models */,
@@ -77,6 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				E57046122BF5AD8300D61155 /* PreImage.swift */,
+				E57046332BFB8CD800D61155 /* TypeSales.swift */,
+				E570463C2BFC31E300D61155 /* Menu.swift */,
+				E57046482BFC911B00D61155 /* Payment.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -93,8 +123,27 @@
 			children = (
 				E57046022BF596AA00D61155 /* ContentView.swift */,
 				E57046162BF5B05A00D61155 /* PreScreenView.swift */,
+				E57046182BF5DD8500D61155 /* HomeView.swift */,
+				E570463E2BFC75F900D61155 /* OrderView.swift */,
+				E57046402BFC761A00D61155 /* PaymentView.swift */,
+				E57046422BFC763000D61155 /* WaitingPayment.swift */,
+				E57046442BFC764000D61155 /* SuccessPayment.swift */,
+				E57046462BFC89D200D61155 /* ModalMenu.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E57046322BF750A000D61155 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E57046362BFB920D00D61155 /* Poppins-Bold.ttf */,
+				E57046382BFB920D00D61155 /* Poppins-ExtraLight.ttf */,
+				E570463A2BFB920D00D61155 /* Poppins-Light.ttf */,
+				E570463B2BFB920D00D61155 /* Poppins-Medium.ttf */,
+				E57046372BFB920D00D61155 /* Poppins-Regular.ttf */,
+				E57046392BFB920D00D61155 /* Poppins-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,9 +216,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E57046432BFC763000D61155 /* WaitingPayment.swift in Sources */,
 				E57046172BF5B05A00D61155 /* PreScreenView.swift in Sources */,
+				E57046412BFC761A00D61155 /* PaymentView.swift in Sources */,
+				E570463F2BFC75F900D61155 /* OrderView.swift in Sources */,
+				E57046452BFC764000D61155 /* SuccessPayment.swift in Sources */,
 				E57046032BF596AA00D61155 /* ContentView.swift in Sources */,
+				E570463D2BFC31E300D61155 /* Menu.swift in Sources */,
+				E57046342BFB8CD800D61155 /* TypeSales.swift in Sources */,
+				E57046492BFC911B00D61155 /* Payment.swift in Sources */,
+				E57046472BFC89D200D61155 /* ModalMenu.swift in Sources */,
 				E57046132BF5AD8300D61155 /* PreImage.swift in Sources */,
+				E57046192BF5DD8500D61155 /* HomeView.swift in Sources */,
 				E57046012BF596AA00D61155 /* harlanholdenkioskApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +359,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"harlanholdenkiosk/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = harlanholdenkiosk/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -329,6 +390,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"harlanholdenkiosk/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = harlanholdenkiosk/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
