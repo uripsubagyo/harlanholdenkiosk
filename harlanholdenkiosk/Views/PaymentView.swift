@@ -11,7 +11,9 @@ struct PaymentView: View {
     
     @State var dataPayment: [Payment] = paymentData
     
-    private let adaptiveColumns = Array(repeating: GridItem(.flexible(), spacing: 30), count: 3)
+    @State var isActive: String = "none"
+    
+    private let adaptiveColumns = Array(repeating: GridItem(.flexible(), spacing: 30), count: 2)
     
     
     var body: some View {
@@ -39,10 +41,21 @@ struct PaymentView: View {
             Divider()
             LazyVGrid(columns: adaptiveColumns,spacing: 2) {
                 ForEach(dataPayment, id: \.id) { menu in
-                    Image(menu.image).resizable().frame(maxWidth: 200, maxHeight: 100)
-                }
+                    VStack{
+                        Image(menu.image).resizable().frame(minWidth: 150, maxHeight: 110).padding(30).overlay(
+                            RoundedRectangle(cornerRadius: 20)
+                                .stroke(Color(isActive == menu.name ? "grayHarlan" : "grayLight"), lineWidth: 5).onTapGesture {
+                                    self.isActive = menu.name
+                                }
+                        )
+                    }}
             }
-        }.padding(20)
+            
+            Spacer()
+            Text("Pay").font(Font.custom("Poppins-Reguler", size: 30)).foregroundColor(Color.black).onTapGesture {
+                print("Payment")
+            }
+        }.padding(.leading,40).padding(.trailing,40)
     }
 }
 

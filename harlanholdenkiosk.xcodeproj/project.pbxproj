@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E57046012BF596AA00D61155 /* harlanholdenkioskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57046002BF596AA00D61155 /* harlanholdenkioskApp.swift */; };
-		E57046032BF596AA00D61155 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57046022BF596AA00D61155 /* ContentView.swift */; };
 		E57046052BF596AB00D61155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E57046042BF596AB00D61155 /* Assets.xcassets */; };
 		E57046082BF596AB00D61155 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E57046072BF596AB00D61155 /* Preview Assets.xcassets */; };
 		E57046132BF5AD8300D61155 /* PreImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57046122BF5AD8300D61155 /* PreImage.swift */; };
@@ -27,7 +26,6 @@
 /* Begin PBXFileReference section */
 		E57045FD2BF596AA00D61155 /* harlanholdenkiosk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = harlanholdenkiosk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57046002BF596AA00D61155 /* harlanholdenkioskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = harlanholdenkioskApp.swift; sourceTree = "<group>"; };
-		E57046022BF596AA00D61155 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E57046042BF596AB00D61155 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E57046072BF596AB00D61155 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E57046122BF5AD8300D61155 /* PreImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreImage.swift; sourceTree = "<group>"; };
@@ -121,7 +119,6 @@
 		E57046112BF5AAA100D61155 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E57046022BF596AA00D61155 /* ContentView.swift */,
 				E57046162BF5B05A00D61155 /* PreScreenView.swift */,
 				E57046182BF5DD8500D61155 /* HomeView.swift */,
 				E570463E2BFC75F900D61155 /* OrderView.swift */,
@@ -221,7 +218,6 @@
 				E57046412BFC761A00D61155 /* PaymentView.swift in Sources */,
 				E570463F2BFC75F900D61155 /* OrderView.swift in Sources */,
 				E57046452BFC764000D61155 /* SuccessPayment.swift in Sources */,
-				E57046032BF596AA00D61155 /* ContentView.swift in Sources */,
 				E570463D2BFC31E300D61155 /* Menu.swift in Sources */,
 				E57046342BFB8CD800D61155 /* TypeSales.swift in Sources */,
 				E57046492BFC911B00D61155 /* Payment.swift in Sources */,
