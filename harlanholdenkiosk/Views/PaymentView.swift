@@ -7,7 +7,8 @@ struct PaymentView: View {
     @State var isActive: String = "none"
     
     private let adaptiveColumns = Array(repeating: GridItem(.flexible(), spacing: 30), count: 2)
-    
+//    @Binding var navPaths: [Routes]
+
     
     var body: some View {
         VStack{
@@ -45,8 +46,8 @@ struct PaymentView: View {
             }.padding(.top,20)
             
             Spacer()
-            Text("Pay").font(Font.custom("Poppins-Reguler", size: 30)).foregroundColor(Color.black).onTapGesture {
-                print("Payment")
+            NavigationLink(value:Routes.waiting){
+                Text("Pay").font(Font.custom("Poppins-Reguler", size: 30)).foregroundColor(Color.black)
             }
         }.padding(.leading,40).padding(.trailing,40)
     }

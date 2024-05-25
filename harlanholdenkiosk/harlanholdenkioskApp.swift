@@ -4,7 +4,9 @@ import SwiftUI
 struct harlanholdenkioskApp: App {
     var body: some Scene {
         WindowGroup {
-            PreScreenView()
+            NavigationStackManager()
+                .environmentObject(SheetManager())
+                .environmentObject(CartManager())
         }
     }
 }

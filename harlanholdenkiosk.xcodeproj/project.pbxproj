@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E5520CA22BFF878C0075C0CF /* CartBucketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5520CA12BFF878C0075C0CF /* CartBucketView.swift */; };
+		E5520CA42C002BCA0075C0CF /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5520CA32C002BCA0075C0CF /* CartManager.swift */; };
+		E5520CA62C002E3B0075C0CF /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5520CA52C002E3B0075C0CF /* Cart.swift */; };
+		E5520CA82C002F240075C0CF /* AddOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5520CA72C002F240075C0CF /* AddOn.swift */; };
+		E5520CAA2C0076BF0075C0CF /* SheetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5520CA92C0076BF0075C0CF /* SheetManager.swift */; };
 		E57046012BF596AA00D61155 /* harlanholdenkioskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57046002BF596AA00D61155 /* harlanholdenkioskApp.swift */; };
 		E57046052BF596AB00D61155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E57046042BF596AB00D61155 /* Assets.xcassets */; };
 		E57046082BF596AB00D61155 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E57046072BF596AB00D61155 /* Preview Assets.xcassets */; };
@@ -21,9 +26,15 @@
 		E57046452BFC764000D61155 /* SuccessPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57046442BFC764000D61155 /* SuccessPayment.swift */; };
 		E57046472BFC89D200D61155 /* ModalMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57046462BFC89D200D61155 /* ModalMenu.swift */; };
 		E57046492BFC911B00D61155 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57046482BFC911B00D61155 /* Payment.swift */; };
+		E570464B2BFDA76900D61155 /* NavigationStackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E570464A2BFDA76900D61155 /* NavigationStackManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E5520CA12BFF878C0075C0CF /* CartBucketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartBucketView.swift; sourceTree = "<group>"; };
+		E5520CA32C002BCA0075C0CF /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
+		E5520CA52C002E3B0075C0CF /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		E5520CA72C002F240075C0CF /* AddOn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOn.swift; sourceTree = "<group>"; };
+		E5520CA92C0076BF0075C0CF /* SheetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetManager.swift; sourceTree = "<group>"; };
 		E57045FD2BF596AA00D61155 /* harlanholdenkiosk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = harlanholdenkiosk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57046002BF596AA00D61155 /* harlanholdenkioskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = harlanholdenkioskApp.swift; sourceTree = "<group>"; };
 		E57046042BF596AB00D61155 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,6 +57,7 @@
 		E57046442BFC764000D61155 /* SuccessPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessPayment.swift; sourceTree = "<group>"; };
 		E57046462BFC89D200D61155 /* ModalMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalMenu.swift; sourceTree = "<group>"; };
 		E57046482BFC911B00D61155 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		E570464A2BFDA76900D61155 /* NavigationStackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +96,9 @@
 				E57046102BF5AA9700D61155 /* Components */,
 				E570460F2BF5AA8E00D61155 /* Models */,
 				E57046002BF596AA00D61155 /* harlanholdenkioskApp.swift */,
+				E570464A2BFDA76900D61155 /* NavigationStackManager.swift */,
+				E5520CA92C0076BF0075C0CF /* SheetManager.swift */,
+				E5520CA32C002BCA0075C0CF /* CartManager.swift */,
 				E57046042BF596AB00D61155 /* Assets.xcassets */,
 				E57046062BF596AB00D61155 /* Preview Content */,
 			);
@@ -105,6 +120,8 @@
 				E57046332BFB8CD800D61155 /* TypeSales.swift */,
 				E570463C2BFC31E300D61155 /* Menu.swift */,
 				E57046482BFC911B00D61155 /* Payment.swift */,
+				E5520CA52C002E3B0075C0CF /* Cart.swift */,
+				E5520CA72C002F240075C0CF /* AddOn.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -126,6 +143,7 @@
 				E57046422BFC763000D61155 /* WaitingPayment.swift */,
 				E57046442BFC764000D61155 /* SuccessPayment.swift */,
 				E57046462BFC89D200D61155 /* ModalMenu.swift */,
+				E5520CA12BFF878C0075C0CF /* CartBucketView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -214,17 +232,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				E57046432BFC763000D61155 /* WaitingPayment.swift in Sources */,
+				E5520CAA2C0076BF0075C0CF /* SheetManager.swift in Sources */,
 				E57046172BF5B05A00D61155 /* PreScreenView.swift in Sources */,
 				E57046412BFC761A00D61155 /* PaymentView.swift in Sources */,
 				E570463F2BFC75F900D61155 /* OrderView.swift in Sources */,
 				E57046452BFC764000D61155 /* SuccessPayment.swift in Sources */,
 				E570463D2BFC31E300D61155 /* Menu.swift in Sources */,
 				E57046342BFB8CD800D61155 /* TypeSales.swift in Sources */,
+				E570464B2BFDA76900D61155 /* NavigationStackManager.swift in Sources */,
 				E57046492BFC911B00D61155 /* Payment.swift in Sources */,
+				E5520CA82C002F240075C0CF /* AddOn.swift in Sources */,
 				E57046472BFC89D200D61155 /* ModalMenu.swift in Sources */,
+				E5520CA42C002BCA0075C0CF /* CartManager.swift in Sources */,
 				E57046132BF5AD8300D61155 /* PreImage.swift in Sources */,
 				E57046192BF5DD8500D61155 /* HomeView.swift in Sources */,
+				E5520CA22BFF878C0075C0CF /* CartBucketView.swift in Sources */,
 				E57046012BF596AA00D61155 /* harlanholdenkioskApp.swift in Sources */,
+				E5520CA62C002E3B0075C0CF /* Cart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

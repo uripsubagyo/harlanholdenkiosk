@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct WaitingPayment: View {
+//    @Binding var navPaths: [Routes]
+
     var body: some View {
         VStack{
             ZStack{
