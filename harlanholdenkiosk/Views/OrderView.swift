@@ -40,7 +40,7 @@ struct OrderView: View {
                 }
             }.padding(.horizontal,20)
             NavigationLink(value: Routes.payment){VStack{
-                Text("SelectPayment")
+                Text("Select Payment")
                     .foregroundColor(Color("goldLight"))
                     .font(Font.custom("Poppins-Reguler", size: 30))
                     .padding(10)
@@ -56,7 +56,7 @@ struct MenuListItem: View {
             Image(itemCart.item.image).resizable().frame(width: 77, height: 77).cornerRadius(10)
             VStack(alignment: .leading){
                 Text(itemCart.item.name).font(Font.custom("Poppins-Reguler", size: 15)).foregroundColor(Color("grayHarlan"))
-                Text("\(itemCart.temperature.name)  |  \(itemCart.bean.name)  |  \(itemCart.milk.name)").font(Font.custom("Poppins-Reguler", size: 15)).foregroundColor(Color("grayLight"))
+                Text("\(itemCart.temperature.name) | \(itemCart.bean.name) Bean |  \(itemCart.milk.name) Milk").font(Font.custom("Poppins-Reguler", size: 15)).foregroundColor(Color("grayLight"))
             }
             Spacer()
             VStack(alignment: .trailing){
