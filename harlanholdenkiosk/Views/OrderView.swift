@@ -28,7 +28,7 @@ struct OrderView: View {
                     Image("HarlanIcon").resizable().frame(width: 120, height: 120)
                 }.frame(maxWidth: .infinity)
                 
-                Text("Order \(cartManager.getCountCart())")
+                Text("Order")
                 
                 Divider()
                 ScrollView{

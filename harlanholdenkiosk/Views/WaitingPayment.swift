@@ -1,15 +1,21 @@
 import SwiftUI
+import Foundation
 
 struct WaitingPayment: View {
-//    @Binding var navPaths: [Routes]
-
+    
+    @EnvironmentObject var cartManager : CartManager
+    @EnvironmentObject var transactionManager: TransactionManager
+    
     var body: some View {
         VStack{
             ZStack{
                 Image("bg-pattern").resizable()
                 VStack{
                     Image("HarlanIcon").resizable().frame(width: 130, height: 130)
-                    Text("Payment Successfuly").font(Font.custom("Poppins-Bold", size: 30)).foregroundColor(Color.white)
+                    HStack{
+                        Text("Payment with").font(Font.custom("Poppins-Bold", size: 30)).foregroundColor(Color.white)
+                        Image("qris-logo-white").resizable().frame(width: 50, height: 30)
+                    }
                 }
             }.frame(maxWidth: .infinity, maxHeight: 250).ignoresSafeArea()
             VStack{
@@ -28,7 +34,12 @@ struct WaitingPayment: View {
             }
             Text("Waiting for customer payment").padding(.top,10)
             Spacer()
-            Text("Done")
+            NavigationLink(value: Routes.success){
+                Text("Done")
+            }.onTapGesture {
+                var itemTransaction = Transaction(orderList: cartManager.product, payment: paymentData[1])
+                transactionManager.createTransaction(item: itemTransaction)
+            }
         }
     }
 }

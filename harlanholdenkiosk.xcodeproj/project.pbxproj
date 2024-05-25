@@ -12,6 +12,8 @@
 		E5520CA62C002E3B0075C0CF /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5520CA52C002E3B0075C0CF /* Cart.swift */; };
 		E5520CA82C002F240075C0CF /* AddOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5520CA72C002F240075C0CF /* AddOn.swift */; };
 		E5520CAA2C0076BF0075C0CF /* SheetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5520CA92C0076BF0075C0CF /* SheetManager.swift */; };
+		E5520CAC2C018A0F0075C0CF /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5520CAB2C018A0E0075C0CF /* Transaction.swift */; };
+		E5520CAE2C018C2A0075C0CF /* TransactionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5520CAD2C018C2A0075C0CF /* TransactionManager.swift */; };
 		E57046012BF596AA00D61155 /* harlanholdenkioskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57046002BF596AA00D61155 /* harlanholdenkioskApp.swift */; };
 		E57046052BF596AB00D61155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E57046042BF596AB00D61155 /* Assets.xcassets */; };
 		E57046082BF596AB00D61155 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E57046072BF596AB00D61155 /* Preview Assets.xcassets */; };
@@ -35,6 +37,8 @@
 		E5520CA52C002E3B0075C0CF /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		E5520CA72C002F240075C0CF /* AddOn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOn.swift; sourceTree = "<group>"; };
 		E5520CA92C0076BF0075C0CF /* SheetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetManager.swift; sourceTree = "<group>"; };
+		E5520CAB2C018A0E0075C0CF /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		E5520CAD2C018C2A0075C0CF /* TransactionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionManager.swift; sourceTree = "<group>"; };
 		E57045FD2BF596AA00D61155 /* harlanholdenkiosk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = harlanholdenkiosk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57046002BF596AA00D61155 /* harlanholdenkioskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = harlanholdenkioskApp.swift; sourceTree = "<group>"; };
 		E57046042BF596AB00D61155 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,6 +75,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E5520CAF2C018C4C0075C0CF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E570464A2BFDA76900D61155 /* NavigationStackManager.swift */,
+				E5520CA92C0076BF0075C0CF /* SheetManager.swift */,
+				E5520CAD2C018C2A0075C0CF /* TransactionManager.swift */,
+				E5520CA32C002BCA0075C0CF /* CartManager.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		E57045F42BF596AA00D61155 = {
 			isa = PBXGroup;
 			children = (
@@ -90,15 +105,13 @@
 		E57045FF2BF596AA00D61155 /* harlanholdenkiosk */ = {
 			isa = PBXGroup;
 			children = (
+				E5520CAF2C018C4C0075C0CF /* Core */,
 				E57046352BFB915600D61155 /* Info.plist */,
 				E57046322BF750A000D61155 /* Fonts */,
 				E57046112BF5AAA100D61155 /* Views */,
 				E57046102BF5AA9700D61155 /* Components */,
 				E570460F2BF5AA8E00D61155 /* Models */,
 				E57046002BF596AA00D61155 /* harlanholdenkioskApp.swift */,
-				E570464A2BFDA76900D61155 /* NavigationStackManager.swift */,
-				E5520CA92C0076BF0075C0CF /* SheetManager.swift */,
-				E5520CA32C002BCA0075C0CF /* CartManager.swift */,
 				E57046042BF596AB00D61155 /* Assets.xcassets */,
 				E57046062BF596AB00D61155 /* Preview Content */,
 			);
@@ -122,6 +135,7 @@
 				E57046482BFC911B00D61155 /* Payment.swift */,
 				E5520CA52C002E3B0075C0CF /* Cart.swift */,
 				E5520CA72C002F240075C0CF /* AddOn.swift */,
+				E5520CAB2C018A0E0075C0CF /* Transaction.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -235,6 +249,7 @@
 				E5520CAA2C0076BF0075C0CF /* SheetManager.swift in Sources */,
 				E57046172BF5B05A00D61155 /* PreScreenView.swift in Sources */,
 				E57046412BFC761A00D61155 /* PaymentView.swift in Sources */,
+				E5520CAE2C018C2A0075C0CF /* TransactionManager.swift in Sources */,
 				E570463F2BFC75F900D61155 /* OrderView.swift in Sources */,
 				E57046452BFC764000D61155 /* SuccessPayment.swift in Sources */,
 				E570463D2BFC31E300D61155 /* Menu.swift in Sources */,
@@ -242,6 +257,7 @@
 				E570464B2BFDA76900D61155 /* NavigationStackManager.swift in Sources */,
 				E57046492BFC911B00D61155 /* Payment.swift in Sources */,
 				E5520CA82C002F240075C0CF /* AddOn.swift in Sources */,
+				E5520CAC2C018A0F0075C0CF /* Transaction.swift in Sources */,
 				E57046472BFC89D200D61155 /* ModalMenu.swift in Sources */,
 				E5520CA42C002BCA0075C0CF /* CartManager.swift in Sources */,
 				E57046132BF5AD8300D61155 /* PreImage.swift in Sources */,

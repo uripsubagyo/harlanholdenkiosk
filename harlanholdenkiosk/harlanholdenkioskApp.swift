@@ -7,6 +7,7 @@ struct harlanholdenkioskApp: App {
             NavigationStackManager()
                 .environmentObject(SheetManager())
                 .environmentObject(CartManager())
+                .environmentObject(TransactionManager())
         }
     }
 }
