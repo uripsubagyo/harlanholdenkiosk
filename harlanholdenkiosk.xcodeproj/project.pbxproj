@@ -29,6 +29,7 @@
 		E57046472BFC89D200D61155 /* ModalMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57046462BFC89D200D61155 /* ModalMenu.swift */; };
 		E57046492BFC911B00D61155 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57046482BFC911B00D61155 /* Payment.swift */; };
 		E570464B2BFDA76900D61155 /* NavigationStackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E570464A2BFDA76900D61155 /* NavigationStackManager.swift */; };
+		E5FF5D2D2C0D71F300075720 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = E5FF5D2C2C0D71F300075720 /* readme.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		E57046462BFC89D200D61155 /* ModalMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalMenu.swift; sourceTree = "<group>"; };
 		E57046482BFC911B00D61155 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
 		E570464A2BFDA76900D61155 /* NavigationStackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackManager.swift; sourceTree = "<group>"; };
+		E5FF5D2C2C0D71F300075720 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		E57045F42BF596AA00D61155 = {
 			isa = PBXGroup;
 			children = (
+				E5FF5D2C2C0D71F300075720 /* readme.md */,
 				E57045FF2BF596AA00D61155 /* harlanholdenkiosk */,
 				E57045FE2BF596AA00D61155 /* Products */,
 			);
@@ -234,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E57046082BF596AB00D61155 /* Preview Assets.xcassets in Resources */,
+				E5FF5D2D2C0D71F300075720 /* readme.md in Resources */,
 				E57046052BF596AB00D61155 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

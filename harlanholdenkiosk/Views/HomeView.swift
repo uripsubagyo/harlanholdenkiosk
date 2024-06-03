@@ -57,6 +57,14 @@ struct HomeView: View {
                             }
                         }
                     Spacer()
+                    Text("drinks")
+                        .font(.system(size: 20, weight: self.onSelect == "drinks" ? Font.Weight.bold : Font.Weight.regular))
+                        .foregroundColor(Color("grayHarlan")).onTapGesture {
+                            withAnimation(.default){
+                                self.onSelect = "drinks"
+                            }
+                        }
+                    Spacer()
                     Text("bottle")
                         .font(.system(size: 20, weight: self.onSelect == "bottle" ? Font.Weight.bold : Font.Weight.regular))
                         .foregroundColor(Color("grayHarlan")).onTapGesture {
@@ -83,7 +91,8 @@ struct HomeView: View {
                 }
                 TabView(selection: self.$onSelect){
                     GridMenuView(itemsData: menuSets).tag("sets")
-                    GridMenuView(itemsData: menuDrinks).tag("coffee")
+                    GridMenuView(itemsData: menuCoffee).tag("coffee")
+                    GridMenuView(itemsData: menuDrinks).tag("drinks")
                     GridMenuView(itemsData: menuBottle).tag("bottle")
                     GridMenuView(itemsData: menuSnacks).tag("snacks")
                     GridMenuView(itemsData: menuGift).tag("gift")
