@@ -43,6 +43,12 @@ struct OrderView: View {
                     Text("No menu has been added").frame(maxHeight: .infinity).foregroundColor(Color("grayLight"))
                 }
             }.padding(.horizontal,20)
+            Divider()
+            HStack{
+                Text("Total").fontWeight(.bold)
+                Spacer()
+                Text("Rp\(cartManager.totalPayment())").fontWeight(.bold)
+            }.padding(10).font(.system(size: 25, weight: Font.Weight.medium)).foregroundColor(Color.black)
             if cartManager.getCountCart() > 0 {
                 NavigationLink(value: Routes.payment){VStack{
                     Text("Select Payment")
