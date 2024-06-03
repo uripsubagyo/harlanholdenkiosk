@@ -1,7 +1,6 @@
 # Harlan + Holden Kiosk Project
 
-![Preview](https://github.com/uripsubagyo/harlanholdenkiosk/assets/88327573/e86c76fa-e32e-402f-be77-32aebf329ba4
-)
+https://github.com/uripsubagyo/harlanholdenkiosk/assets/88327573/e86c76fa-e32e-402f-be77-32aebf329ba4
 
 
 #### Introduction
