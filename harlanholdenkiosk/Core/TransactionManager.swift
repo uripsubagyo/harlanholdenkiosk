@@ -16,6 +16,10 @@ class TransactionManager: ObservableObject {
     }
     
     func removeTransaction(){
+        self.clearTransaction()
+    }
+    
+    func clearTransaction(){
         self.transaction = nil
     }
 }

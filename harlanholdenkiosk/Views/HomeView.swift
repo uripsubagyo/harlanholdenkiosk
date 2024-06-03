@@ -14,6 +14,7 @@ struct HomeView: View {
     @Environment(\.dismiss) var dismiss
     
     @EnvironmentObject var sheetManager : SheetManager
+    @EnvironmentObject var cartManager : CartManager
 
     var body: some View {
         ZStack{
@@ -22,6 +23,7 @@ struct HomeView: View {
                     HStack{
                         Button{
                             print("GO PREVIOUS")
+                            cartManager.clearProductCart()
                             dismiss()
                         }label: {
                             HStack{

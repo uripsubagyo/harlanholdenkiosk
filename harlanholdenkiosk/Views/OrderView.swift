@@ -31,37 +31,57 @@ struct OrderView: View {
                 Text("Order")
                 
                 Divider()
-                ScrollView{
-                    LazyVGrid(columns: adaptiveColumns, spacing: 5){
-                        ForEach(cartManager.product, id:\.id){cart in
-                            MenuListItem(itemCart: cart)
-                        }
-                    }.frame(maxWidth: .infinity)
+                if cartManager.getCountCart() > 0 {
+                    ScrollView{
+                        LazyVGrid(columns: adaptiveColumns, spacing: 5){
+                            ForEach(cartManager.product, id:\.id){cart in
+                                MenuListItem(itemCart: cart)
+                            }
+                        }.frame(maxWidth: .infinity)
+                    }
+                } else{
+                    Text("No menu has been added").frame(maxHeight: .infinity).foregroundColor(Color("grayLight"))
                 }
             }.padding(.horizontal,20)
-            NavigationLink(value: Routes.payment){VStack{
-                Text("Select Payment")
-                    .foregroundColor(Color("goldLight"))
-                    .font(Font.custom("Poppins-Reguler", size: 30))
-                    .padding(10)
-            }.padding(20).frame(maxWidth: .infinity).background(Color("grayHarlan"))}
+            if cartManager.getCountCart() > 0 {
+                NavigationLink(value: Routes.payment){VStack{
+                    Text("Select Payment")
+                        .foregroundColor(Color("goldLight"))
+                        .font(Font.custom("Poppins-Reguler", size: 30))
+                        .padding(10)
+                }.padding(20).frame(maxWidth: .infinity).background(Color("grayHarlan"))}
+            }
         }.navigationBarBackButtonHidden(true)
     }
 }
 
 struct MenuListItem: View {
+    
+    @EnvironmentObject var cartManager : CartManager
+    
     var itemCart: Cart
+    
     var body: some View{
         HStack(alignment: .top){
             Image(itemCart.item.image).resizable().frame(width: 77, height: 77).cornerRadius(10)
             VStack(alignment: .leading){
                 Text(itemCart.item.name).font(Font.custom("Poppins-Reguler", size: 15)).foregroundColor(Color("grayHarlan"))
-                Text("\(itemCart.temperature.name) | \(itemCart.bean.name) Bean |  \(itemCart.milk.name) Milk").font(Font.custom("Poppins-Reguler", size: 15)).foregroundColor(Color("grayLight"))
+                if (!itemCart.item.isAccessories) {
+                    Text("\(itemCart.temperature!.name) | \(itemCart.bean!.name) Bean |  \(itemCart.milk!.name) Milk").font(Font.custom("Poppins-Reguler", size: 15)).foregroundColor(Color("grayLight"))
+                }
             }
             Spacer()
             VStack(alignment: .trailing){
                 Text("Rp\(itemCart.calculate)").font(.system(size: 15, weight: Font.Weight.bold ))
-                Text("Qty: 1").font(Font.custom("Poppins-Reguler", size: 15)).foregroundColor(Color("grayLight")).padding(.top,1)
+                    HStack{
+                        Image(systemName: "minus.circle").onTapGesture(){
+                            cartManager.removeItem(id: itemCart.id)
+                        }
+                        Text("\(itemCart.sumItem)")
+                        Image(systemName: "plus.circle.fill").onTapGesture(){
+                            cartManager.addItem(id: itemCart.id)
+                        }
+                    }.padding(.top, 20)
             }
         }.padding(.bottom, 10)
     }

@@ -1,10 +1,3 @@
-//
-//  CartBucketView.swift
-//  harlanholdenkiosk
-//
-//  Created by I Made Urip Subagyo on 23/05/24.
-//
-
 import SwiftUI
 
 struct CartBucketView: View {
@@ -29,7 +22,7 @@ struct CartBucketView: View {
 
                 }.background(Color("grayLight"))
             }
-        }.frame(maxWidth: .infinity).frame(height: 100).opacity(cartManager.isHidden() ? 0 : 1)
+        }.frame(maxWidth: .infinity).frame(height: 100).opacity(cartManager.isHidden() ? 0 : 1).animation(.easeOut, value: cartManager.isHidden())
     }
 }
 

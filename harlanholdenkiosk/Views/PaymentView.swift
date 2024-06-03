@@ -9,7 +9,6 @@ struct PaymentView: View {
     private let adaptiveColumns = Array(repeating: GridItem(.flexible(), spacing: 30), count: 2)
 
     @Environment(\.dismiss) var dismiss
-    
 
     var body: some View {
         VStack{
@@ -18,6 +17,7 @@ struct PaymentView: View {
                     HStack{
                         Button{
                             print("BACK VIEW")
+                            dismiss()
                         }label: {
                             HStack{
                                 Image(systemName: "arrow.backward").frame(width:20, height: 20).foregroundColor(Color.black)
@@ -40,10 +40,10 @@ struct PaymentView: View {
                         VStack{
                             Image(menu.image).resizable().frame(minWidth: 150, maxHeight: 110).padding(30).overlay(
                                 RoundedRectangle(cornerRadius: 20)
-                                    .stroke(Color(isActive == menu.name ? "grayHarlan" : "grayLight"), lineWidth: 5).onTapGesture {
-                                        self.isActive = menu.name
-                                    }
+                                    .stroke(Color(isActive == menu.name ? "grayHarlan" : "grayLight"), lineWidth: 5)
                             )
+                        }.onTapGesture {
+                            self.isActive = menu.name
                         }}
                 }.padding(.top,20)
                 Spacer()
