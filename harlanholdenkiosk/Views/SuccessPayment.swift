@@ -34,14 +34,15 @@ struct SuccessPayment: View {
                 Text("Thank You For Your Order").font(Font.custom("Poppins-Bold", size: 45)).foregroundColor(Color.black)
                 Text("Have a nice day!").font(Font.custom("Poppins-Reguler", size: 30)).foregroundColor(Color.black)
             }.padding(20)
-        }.onAppear{
-            Timer.scheduledTimer(
-            withTimeInterval: 5,
-            repeats: false
-            ){
-                
-            }
         }
+//        .onAppear{
+//                    Timer.scheduledTimer(
+//                    withTimeInterval: 5,
+//                    repeats: false
+//                    ){
+//                       
+//            }
+//        }
     }
 }
 
